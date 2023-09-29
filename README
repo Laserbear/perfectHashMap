@@ -1,0 +1,6 @@
+In which we attempt to construct an efficient hash map for stock tickers. 
+
+String TICKER_STRING -> integer_index {data about ticker}
+
+We will utilise a perfect hash H i.e. one which has no collisions over our set of tickers T. H is perfect over T iff for all tickers t1, t2 in T, H(t1) = H(t2) implies t1 = t2. It would also be pretty nice if the range of values outputted was smaller. 
+let max_H denote max(H(t)) for t in T, min_H denote min(H(t)) for t in T, we should benefit from an H which is 1) perfect over T and 2) minimizes its range over T

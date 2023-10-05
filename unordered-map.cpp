@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 struct stock_data {
-	
+	float price;
 }
 
 stock_data look_up_key(const char* key, std::stize_t size) noexcept {
